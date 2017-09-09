@@ -1,0 +1,42 @@
+[
+    {
+        "sku" : "PC175",
+        "title" : "DENIM JACKET",
+        "price" : "60.00"
+    },
+    {
+        "sku" : "PT596",
+        "title" : "TIE BACK STRIP TOP",
+        "price" : "42.00"
+    },
+    {
+        "sku" : "PD695",
+        "title" : "ZIPFRONT PINAFORE DRESS",
+        "price" : "42.00"
+    },
+    {
+        "sku" : "PD688",
+        "title" : "DENIM SHIRT DRESS",
+        "price" : "60.00"
+    },
+    {
+        "sku" : "PC176",
+        "title" : "LIGHTWEIGHT PADDED JACKET",
+        "price" : "80.00"
+    },
+    {
+        "sku" : "PD689",
+        "title" : "DRAWSTRING TUNIC KNITTED DRESS",
+        "price" : "60.00"
+    },
+    {
+        "sku" : "PT597",
+        "title" : "STRIP LONG SLEEVE TOP",
+        "price" : "25.00"
+    },
+    {
+        "sku" : "PD692",
+        "title" : "LEILA 3/4 SLEEVE DRESS",
+        "price" : "60.00"
+    }
+]
