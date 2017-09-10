@@ -1,4 +1,6 @@
-
+.mb-1 {
+    margin-bottom: 0.5em;
+}
 .product-img {
     width: 80%;
 }
@@ -7,4 +9,20 @@
 }
 .product-summary {
     margin: 50px auto;
+    border: 1px solid #cccccc ;
+}
+.cart-image {
+    width: 15%;
+    height: 15%;
+}
+.basket-item{
+    border-bottom: 1px solid #cccccc;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
 }

@@ -9,6 +9,9 @@ angular.
             when('/products', {
                 template: '<product-list></product-list>'
             }).
+            when('/basket', {
+                template: '<basket-items></basket-items>'
+            }).
             otherwise('/products');
         }
     ])

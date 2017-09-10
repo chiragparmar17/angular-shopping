@@ -1,4 +1,7 @@
 'use strict';
 
 //core module
-angular.module("core", ["core.product"]);
+angular.module("core", [
+    "core.product",
+    "core.basket"
+]);

@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" ng-click="products">{{$ctrl.title}}</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown inline pull-right">
+                <a class="btn btn-small btn-link dropdown-toggle" data-toggle="dropdown" ng-href="#!/basket" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                <img class="cart-image" ng-src="images/cart.png">
+            </a>
+                <basket-items class="dropdown-menu"></basket-items>
+            </li>
+        </ul>
+    </div>
+</nav>

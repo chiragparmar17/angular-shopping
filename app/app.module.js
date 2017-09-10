@@ -3,5 +3,7 @@
 angular.module("shoppingApp", [
     "core",
     "ngRoute",
-    "productList"
+    "header",
+    "productList",
+    "basketItems"
 ]);
