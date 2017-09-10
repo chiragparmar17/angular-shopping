@@ -13,7 +13,8 @@ angular.
                         if (basketItemVar.product.sku == product.sku) {
                             basketItemVar.quantity = basketItemVar.quantity + 1;
                             isProductAdded = true;
-                            toastr.warning('Item already present, added +1 quantity.', basketItemVar.product.title);
+                            toastr.clear();
+                            toastr.warning('Item already present, added +1 quantity. Total Quantity : '+basketItemVar.quantity, basketItemVar.product.title);
                             break;
                         }
                     }
@@ -25,6 +26,7 @@ angular.
                         basketItem.product = product;
                         basketItem.quantity = 1;
                         this.basketItems.push(basketItem);
+                        toastr.clear();
                         toastr.success('Item added to the Basket successfully.', basketItem.product.title)
                     }
                     console.log(this.basketItems);
