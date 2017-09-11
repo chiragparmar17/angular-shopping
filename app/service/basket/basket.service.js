@@ -1,7 +1,7 @@
 'use strict';
 
 angular.
-    module('core.basket').
+    module('service.basket').
     factory('BasketService', [
         function () {
             var BasketService = {

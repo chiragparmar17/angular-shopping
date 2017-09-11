@@ -1,4 +1,4 @@
 'use strict';
 
 //Basket service module
-angular.module("core.basket", []);
+angular.module("service.basket", []);

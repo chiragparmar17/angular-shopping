@@ -1,4 +1,4 @@
 'use strict';
 
 //Basket Dropdown Module
-angular.module("basketDropdown", ["core.basket"]);
+angular.module("basketDropdown", ["service.basket"]);

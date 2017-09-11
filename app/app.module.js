@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module("shoppingApp", [
-    "core",
+    "service",
     "ngRoute",
     "header",
     "productList",

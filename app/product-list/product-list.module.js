@@ -2,6 +2,5 @@
 
 //Item List Module
 angular.module("productList", [
-    "core.product",
-    "core.basket"
+    "service"
 ]);

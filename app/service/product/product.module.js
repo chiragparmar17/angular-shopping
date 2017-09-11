@@ -1,4 +1,4 @@
 'use strict';
 
 //Product service module
-angular.module("core.product", []);
+angular.module("service.product", []);

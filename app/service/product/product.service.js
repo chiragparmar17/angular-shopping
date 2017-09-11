@@ -1,7 +1,7 @@
 'use strict';
 
 angular.
-    module("core.product").
+    module("service.product").
     factory("ProductService", ["$http",
         function ($http) {
             var ProductService = {
