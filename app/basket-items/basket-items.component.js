@@ -9,6 +9,15 @@ angular.
             function BasketItemsController($scope, BasketService) {
                 var ctrl = this;
                 ctrl.basketItems = BasketService.getBasket();
+
+                ctrl.increaseProductQuantity = function (product) {
+                    ctrl.basketItems = BasketService.increaseProductQuantity(product);
+                }
+
+                ctrl.decreaseProductQuantity = function (product) {
+                    ctrl.basketItems = BasketService.decreaseProductQuantity(product);
+                }
+
                 $scope.$watch(function () {
                     return BasketService.getBasketTotal();
                 }, function (newValue, oldValue) {

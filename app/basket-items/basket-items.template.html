@@ -17,10 +17,20 @@
                             <h3>{{basketItem.product.price | currency:"&pound;"}}</h3>
                         </div>
                         <div class="col-xs-12">
-                            <h4>
-                                <span>Quantity : </span>
-                                <span>{{basketItem.quantity}}</span>
-                            </h4>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <h4 class="text-left">Quantity : </h3>
+                                </div>
+                                <div class="input-group col-xs-2">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="$ctrl.decreaseProductQuantity(basketItem.product)">-</button>
+                                    </div>
+                                    <input type="text" class="form-control text-center" ng-model="basketItem.quantity" readonly/>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="$ctrl.increaseProductQuantity(basketItem.product)">+</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
