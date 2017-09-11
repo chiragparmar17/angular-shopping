@@ -30,11 +30,14 @@ angular.
                         toastr.clear();
                         toastr.success('Item added to the Basket successfully.', basketItem.product.title)
                     }
+                    this.updateTotal();
+                    console.log("Total: " + parseFloat(this.basketTotal).toFixed(2));
+                    console.log(this.basketItems);
+                },
+                updateTotal: function(){
                     this.basketTotal = parseFloat(this.basketItems.reduce(function (sum, basketItem) {
                         return sum + parseFloat(basketItem.product.price * basketItem.quantity);
                     }, 0));
-                    console.log("Total: " + parseFloat(this.basketTotal).toFixed(2));
-                    console.log(this.basketItems);
                 },
                 getBasket: function () {
                     return this.basketItems;
@@ -51,6 +54,7 @@ angular.
                             break;
                         }
                     }
+                    this.updateTotal();
                     return this.basketItems;
                 },
                 decreaseProductQuantity: function(product){
@@ -72,6 +76,7 @@ angular.
                             break;
                         }
                     }
+                    this.updateTotal();
                     return this.basketItems;
                 }
             }
