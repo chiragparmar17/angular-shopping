@@ -5,5 +5,6 @@ angular.module("shoppingApp", [
     "ngRoute",
     "header",
     "productList",
+    "basketDropdown",
     "basketItems"
 ]);

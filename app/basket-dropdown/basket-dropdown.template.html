@@ -1,0 +1,36 @@
+<ul class="list-unstyled">
+    <li class="basket-item" ng-repeat="basketItem in $ctrl.basketItems track by $index">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="img-responsive" ng-src="images/product-image.png">
+            </div>
+            <div class="col-xs-8">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <small class="text-primary">{{basketItem.product.title}}</small>
+                    </div>
+                    <div class="col-xs-12">
+                        <span>{{basketItem.product.price | currency:"&pound;"}}</span>
+                    </div>
+                    <div class="col-xs-12">
+                        <span>Quantity : </span>
+                        <span>{{basketItem.quantity}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li ng-if="$ctrl.basketItems.length > 0">
+        <div class="row">
+            <div class="col-xs-4">
+                <h4 class="text-right">Total : </h4>
+            </div>
+            <div class="col-xs-8">
+                <h4>{{$ctrl.basketTotal | currency:"&pound;"}}</h4>
+            </div>
+        </div>
+    </li>
+    <li class="text-danger" ng-if="$ctrl.basketItems.length == 0">
+        <p> No Items in the basket.</p>
+    </li>
+</ul>

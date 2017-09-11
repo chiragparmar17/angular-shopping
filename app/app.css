@@ -1,6 +1,9 @@
 .mb-1 {
     margin-bottom: 0.5em;
 }
+.mtb-1 {
+    margin: 0.5em auto;
+}
 .product-img {
     width: 80%;
 }
@@ -15,7 +18,7 @@
     width: 15%;
     height: 15%;
 }
-.basket-item{
+.basket-item {
     border-bottom: 1px solid #cccccc;
 }
 .navbar-default .navbar-nav > li.dropdown:hover > a, 
@@ -25,4 +28,7 @@
 }
 li.dropdown:hover > .dropdown-menu {
     display: block;
+}
+.border-1 {
+    border: 1px solid #cccccc;
 }

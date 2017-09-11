@@ -6,8 +6,8 @@
                 <div class="product-info">
                     <ul class="list-unstyled text-center">
                         <li><small>{{product.sku}}</small></li>
-                        <li><h5>{{product.title}}</h5></li>
-                        <li><h6>{{product.price}}</h6></li>
+                        <li><h5 class="text-primary">{{product.title}}</h5></li>
+                        <li><h6>{{product.price | currency:"&pound;"}}</h6></li>
                     </ul>
                 </div>
                 <button class="btn btn-primary center-block mb-1" ng-click="$ctrl.addToCart(product)">Add to Cart</button>
